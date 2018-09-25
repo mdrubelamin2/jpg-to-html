@@ -1,0 +1,440 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{font-family: arial;font-size: 14px;line-height: 18px;background: url(../img/bg.png) repeat fixed 0 0}
+.template{width:960px;margin:0 auto}
+.clear{overflow:hidden}
+#active{color: #E87437}
+
+.headersection{height: 110px;background: #484848}
+
+.header_left {
+	float: left;
+	width: 470px;
+	margin-left: 50px;
+	margin-top: 7px;
+}
+.white{color: #fff}
+.header_left h2 {
+	color: #E87437;
+	font-size: 40px;
+}
+.header_left a{text-decoration: none}
+
+.header_right {
+	float: right;
+	width: 440px;
+	margin-top: 45px;
+}
+.mainmenu {
+	color: #E87437;
+}
+.mainmenu a {
+	text-decoration: none;
+	color: #fff;
+	margin: 0 5px;
+}
+.mainmenu a:hover{color: #E87437}
+
+.mainsection {
+	background: #fff;
+}
+
+.slogan {
+	margin: 10px 50px 5px 50px;
+	border-bottom: 2px dotted #BABABA;
+}
+.slogan h2 {
+	font-size: 40px;
+	color: #333;
+}
+.slogan h3 {
+	font-size: 28px;
+	color: #A5A5A5;
+}
+
+.content{margin: 0px 50px;}
+.description {
+	text-align: center;
+}
+.description p {
+	font-size: 25px;
+	line-height: 30px;
+	color: #8C8C8C;
+}
+
+.midcontent {
+	height: 260px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eb6926+0,f08046+100 */
+    background: #eb6926; /* Old browsers */
+    background: -moz-linear-gradient(left, #eb6926 0%, #f08046 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #eb6926 0%,#f08046 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #eb6926 0%,#f08046 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb6926', endColorstr='#f08046',GradientType=1 ); /* IE6-9 */
+    }
+.midleft {
+	float: left;
+	width: 370px;
+	text-align: center;
+	padding: 20px 40px;
+	margin-right: 30px;
+	color: #fff;
+}
+.midleft h2 {
+	font-size: 30px;
+	border-bottom: 2px dotted #fff;
+	padding-bottom: 30px;
+	width: 245px;
+	margin-left: 60px;
+}
+.midleft p {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: bold;
+}
+.midright{}
+.midright img {
+	width: 350px;
+}
+
+.projects {
+	margin: 0 50px;
+	border-top: 2px dotted #A5A5A5;
+	margin-top: 10px;
+	padding-top: 35px;
+	border-bottom: 2px dotted #A5A5A5;
+	padding-bottom: 35px;
+	margin-bottom: 15px;
+}
+.allpost{margin-left: -65px}
+.samearticle {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f28c59+0,d15b1e+100 */
+    background: rgb(242,140,89); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(242,140,89,1) 0%, rgba(209,91,30,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(242,140,89,1) 0%,rgba(209,91,30,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(242,140,89,1) 0%,rgba(209,91,30,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f28c59', endColorstr='#d15b1e',GradientType=0 ); /* IE6-9 */
+	width: 213px;
+	float: left;
+	margin-left: 65px;
+	padding: 5px 15px;
+    color: #fff;
+    text-align: center
+}
+.samearticle h2 {
+	border-bottom: 2px dotted #fff;
+	padding-bottom: 20px;
+	font-size: 25px;
+	text-shadow: 0px 2px 2px #333;
+}
+.samearticle p{
+    font-weight: bold
+}
+.postlink {
+	background: url(../img/link.png) repeat-x;
+	height: 30px;
+	margin-bottom: 20px;
+	padding-top: 7px;
+	width: 180px;
+	margin-left: 18px;
+}
+.postlink a {
+	text-decoration: none;
+	font-size: 15px;
+	text-align: center;
+	color: #D35D20;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.footersection {
+	background: #fff;
+}
+.footerportion {
+	margin: 0px 50px 10px 50px;
+	text-align: center;
+	color: #777;
+}
+.footerportion p{margin: 0}
+.footerportion a{color: #777}
+.footerportion a:hover{color: #D25D20;text-decoration: none}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
